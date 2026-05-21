@@ -1,0 +1,6 @@
+This repository contains the code for extracting classical morphometric descriptors from segmented immune cells in Serial block-face scanning electron microscopy (SBF-SEM) images and visualise the descriptors 
+via interactive 2D UMAP projections. For more information, please refer to Fig.10 in https://www.medrxiv.org/content/10.1101/2025.08.29.25334660v1.
+
+* classical_features.py: calculate a list of classical morphological features given 3D EM ROIs containing immune cells and the corresponding segmentation masks of the cells. The results are saved as a single csv file.
+* umap_interactive.py: given the extracted features, cell labels and 2D snapshots of each cell, generates interactive 2D UMAP projections coloured by different sets of labels. The generated UMAP plots
+are saved as a single html file and users will be able to interact with the plots by clicking on any points to show the information and snapshots of the corresponding cell.
